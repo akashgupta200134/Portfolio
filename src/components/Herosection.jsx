@@ -56,7 +56,7 @@ const Herosection = () => {
       <div className="container">
         <div className="grid grid-cols-1 gap-2 mt-12 mb-12">
           <div className="box border rounded-xl h-96 w-auto ml-16 mr-16 mt-12 ">
-            <a href="https://aoh-four-musketeers.vercel.app/">
+            <a href="https://arogyasahayak.vercel.app/">
               <img src={Health} className=" h-96 w-auto rounded-xl" />
               <p className="  text-white  -mt-[330px] text-center text-5xl font-bold  ml-[645px]  ">
                 Arogya Sahayak
@@ -74,7 +74,7 @@ const Herosection = () => {
           </div>
 
           <div className="box border rounded-xl h-96 w-auto ml-16 mr-16 mt-12">
-            <a href="https://food-app-ashy-ten.vercel.app/">
+            <a href="https://aahar.vercel.app/">
               <img src={food} className=" h-96 w-auto rounded-xl" />
 
               <p className=" text-white  -mt-[330px] text-center text-5xl font-bold  ml-[435px] ">
@@ -92,19 +92,19 @@ const Herosection = () => {
 
           <div className="box border rounded-xl h-96 w-auto ml-16 mr-16 mt-12">
             <a href="https://weather-app-mu-wheat.vercel.app/">
+              <img src={patho} className=" h-96 w-auto rounded-xl" />
+              <p className="  text-white -mt-80 text-center text-5xl font-bold  ml-[585px] ">
+                Weather App
+              </p>
 
-      <img src={patho} className=" h-96 w-auto rounded-xl" />
-            <p className="  text-white -mt-80 text-center text-5xl font-bold  ml-[585px] ">
-              Weather App
-            </p>
-
-            <p className=" text-white text-start mt-[30px] ml-[720px] mr-12 ">
-            Experience real-time weather updates with our dynamic website crafted using HTML, Tailwind CSS, and JavaScript. Seamlessly integrating live weather data, it provides users with accurate forecasts and insightful weather insights, ensuring they stay informed and prepared for any conditions.
-            </p>
-
-
+              <p className=" text-white text-start mt-[30px] ml-[720px] mr-12 ">
+                Experience real-time weather updates with our dynamic website
+                crafted using HTML, Tailwind CSS, and JavaScript. Seamlessly
+                integrating live weather data, it provides users with accurate
+                forecasts and insightful weather insights, ensuring they stay
+                informed and prepared for any conditions.
+              </p>
             </a>
-      
           </div>
         </div>
       </div>
