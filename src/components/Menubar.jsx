@@ -6,7 +6,7 @@ import { IoMenu } from "react-icons/io5";
 
 const Menubar = () => {
   return (
-    <div className=" mt-14">
+    <div className=" mt-1">
       <div className="  ">
         <ul className="flex flex-col  gap-6 text-center text-white">
           <li onClick={() => {}} className=" text-7xl font-black">
