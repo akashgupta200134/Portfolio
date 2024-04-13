@@ -6,7 +6,6 @@ import { useEffect, useRef } from 'react';
 import Lenis from '@studio-freight/lenis'
 // import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
-import Health from "../images/health.png";
 import food from "../images/food.png";
 import patho from "../images/weather.png";
 import { Link } from "react-router-dom";
@@ -79,7 +78,7 @@ const Herosection = () => {
       </div>
 
       <div className="container">
-        <div className="grid grid-cols-1 gap-2 mt-12 mb-12">
+        {/* <div className="grid grid-cols-1 gap-2 mt-12 mb-12">
           <div className="box border rounded-xl h-96 w-auto ml-16 mr-16 mt-12 ">
             <a href="https://arogyasahayak.vercel.app/">
               <img src={Health} className=" h-96 w-auto rounded-xl" />
@@ -131,9 +130,9 @@ const Herosection = () => {
               </p>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
-      <main ref={container} className="relative mt-1/2">
+      <main ref={container} className="relative mt-12">
       {
         projects.map( (project, i) => {
           const targetScale = 1 - ( (projects.length - i) * 0.05);
@@ -141,7 +140,7 @@ const Herosection = () => {
         })
       }
     </main>
-      <div className="  mb-4 flex flex-col items-center justify-center">
+      <div className="  mb-4 flex flex-col items-center justify-center -mt-16">
         <p className=" text-gray-500 text-center text-xl font-semibold ml-80  mr-80">
           Skilled frontend developer excelling in creating captivating user
           interfaces with expertise in React, JavaScript, and CSS."
