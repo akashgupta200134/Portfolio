@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import Contact from "../components/Contact"
 import Footer from "./Footer";
 
+
 const About = () => {
   return (
     <div>

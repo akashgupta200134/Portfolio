@@ -10,6 +10,7 @@
     "autoprefixer": "^10.4.19",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^11.0.25",
+    "next": "^14.1.4",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,6 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +47,11 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "path-browserify": "^1.0.1",
+    "sass": "^1.74.1",
+    "tailwindcss": "^3.4.3",
+    "util": "^0.12.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   }
 }

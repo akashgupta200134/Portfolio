@@ -1,4 +1,10 @@
-import React, { useEffect } from "react";
+// import "./page.module.scss"
+import { projects } from '../utils/data';
+import Card from './Card';
+import { useScroll } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import Lenis from '@studio-freight/lenis'
+// import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import Health from "../images/health.png";
 import food from "../images/food.png";
@@ -14,6 +20,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { RxCaretUp } from "react-icons/rx";
 
+
 const Herosection = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -21,9 +28,27 @@ const Herosection = () => {
       behavior: 'smooth'
     });
   };
+
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end']
+  })
+
+  useEffect( () => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  })
+
   return (
     <div>
-      <div className="mt-32">
+            <div className="mt-32">
         <section>
           <div className="text-center text-7xl font-extrabold text-white">
             <Typewriter
@@ -108,7 +133,14 @@ const Herosection = () => {
           </div>
         </div>
       </div>
-
+      <main ref={container} className="relative mt-1/2">
+      {
+        projects.map( (project, i) => {
+          const targetScale = 1 - ( (projects.length - i) * 0.05);
+          return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+        })
+      }
+    </main>
       <div className="  mb-4 flex flex-col items-center justify-center">
         <p className=" text-gray-500 text-center text-xl font-semibold ml-80  mr-80">
           Skilled frontend developer excelling in creating captivating user
@@ -216,8 +248,11 @@ const Herosection = () => {
         </div>
 
       </div>
+
+
+
     </div>
-  );
-};
+  )
+}
 
 export default Herosection;
