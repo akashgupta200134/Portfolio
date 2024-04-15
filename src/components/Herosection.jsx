@@ -4,7 +4,6 @@ import Card from './Card';
 import { useScroll } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import Lenis from '@studio-freight/lenis'
-// import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import food from "../images/food.png";
 import patho from "../images/weather.png";
@@ -47,9 +46,9 @@ const Herosection = () => {
 
   return (
     <div>
-            <div className="mt-32">
-        <section>
-          <div className="text-center text-7xl font-extrabold text-white">
+            <div className="  lg:mt-32">
+        <section className='text-center lg:text-center '>
+          <div className=" sm:text-center lg:text-center  lg:text-7xl font-extrabold text-white ">
             <Typewriter
               options={{
                 strings: [
@@ -61,7 +60,7 @@ const Herosection = () => {
               }}
             />
           </div>
-          <p className="mt-10 text-xl font-semibold text-center ml-48 mr-48 text-white">
+          <p className="mt-10 lg:text-xl  sm:text-xl  font-semibold lg:text-center lg:ml-48 lg:mr-48 text-white">
             "Frontend excellence, where design meets code. Transforming ideas
             into seamless experiences. Let's create something extraordinary
             together!"
@@ -75,6 +74,7 @@ const Herosection = () => {
             <p className=" text-white"> Scroll Down to Explore</p>
           </div>
         </section>
+
       </div>
 
       <div className="container">
